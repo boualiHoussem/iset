@@ -20,12 +20,7 @@ public class BankDaoImpl implements BankDao {
     private BankRepository bankRepository;
 
     @Override
-    public void addBank(Bank bank) {
-        bankRepository.save(bank);
-    }
-
-    @Override
-    public void updateBank(Bank bank) {
+    public void saveOrUpdate(Bank bank) {
         bankRepository.save(bank);
     }
 

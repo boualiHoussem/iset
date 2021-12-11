@@ -10,9 +10,7 @@ import java.util.List;
  */
 public interface BankDao {
 
-    void addBank(Bank bank);
-
-    void updateBank(Bank bank);
+    void saveOrUpdate(Bank bank);
 
     void deleteBank(Integer id);
 

@@ -20,14 +20,10 @@ public class AccountDaoImpl implements AccountDao {
     private AccountRepository accountRepository;
 
     @Override
-    public void addAccount(Account account) {
+    public void saveOrUpdate(Account account) {
         accountRepository.save(account);
     }
 
-    @Override
-    public void updateAccount(Account account) {
-        accountRepository.save(account);
-    }
 
     @Override
     public void deleteAccount(Integer id) {

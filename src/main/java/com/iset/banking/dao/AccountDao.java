@@ -10,9 +10,7 @@ import java.util.List;
  */
 public interface AccountDao {
 
-    void addAccount(Account account);
-
-    void updateAccount(Account account);
+    void saveOrUpdate(Account account);
 
     void deleteAccount(Integer id);
 
