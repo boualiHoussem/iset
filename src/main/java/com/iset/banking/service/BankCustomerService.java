@@ -16,6 +16,8 @@ public interface BankCustomerService {
 
     void delete(Integer id);
 
+    BankCustomer findByUsername(String username);
+
     BankCustomer findById(Integer id);
 
     List<BankCustomer> findAll();

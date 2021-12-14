@@ -18,7 +18,10 @@ public interface BankCustomerDao {
 
     void deleteBankCustomer(Integer id);
 
+    BankCustomer findByUsername(String username);
+
     BankCustomer getBankCustomerById(Integer id);
 
     List<BankCustomer> getAllCustomers();
+
 }

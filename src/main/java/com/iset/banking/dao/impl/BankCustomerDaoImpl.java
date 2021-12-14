@@ -37,6 +37,12 @@ public class BankCustomerDaoImpl implements BankCustomerDao {
         bankCustomerRepository.deleteById(id);
     }
 
+
+    @Override
+    public BankCustomer findByUsername(String username) {
+        return bankCustomerRepository.findByUsername(username);
+    }
+
     @Override
     public BankCustomer getBankCustomerById(Integer id) {
         // Select * from BankCustomer Where id = ....

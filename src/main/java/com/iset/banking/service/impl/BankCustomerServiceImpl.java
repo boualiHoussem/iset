@@ -40,6 +40,11 @@ public class BankCustomerServiceImpl implements BankCustomerService {
     }
 
     @Override
+    public BankCustomer findByUsername(String username) {
+        return bankCustomerDao.findByUsername(username);
+    }
+
+    @Override
     public BankCustomer findById(Integer id) {
         return bankCustomerDao.getBankCustomerById(id);
     }

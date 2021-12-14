@@ -8,4 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * date: 08/12/2021
  */
 public interface BankCustomerRepository extends JpaRepository<BankCustomer, Integer> {
+
+    BankCustomer findByUsername(String username);
 }
